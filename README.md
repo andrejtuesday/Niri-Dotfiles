@@ -2,7 +2,7 @@
 yes 
 
 # Preview
-![Screenshot](1.png)
-![Screenshot](2.png)
-![Screenshot](3.png)
-![Screenshot](4.png)
+![Screenshot](Screenshots/1.png)
+![Screenshot](Screenshots/2.png)
+![Screenshot](Screenshots/3.png)
+![Screenshot](Screenshots/4.png)
