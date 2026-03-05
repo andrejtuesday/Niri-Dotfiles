@@ -1,0 +1,22 @@
+output "eDP-1" {
+    mode "1920x1080@60.008"
+    transform "normal"
+
+    hot-corners {
+        off
+    }
+}
+
+output "HDMI-A-2" {
+    mode "2560x1440@74.968"
+    transform "normal"
+    focus-at-startup
+
+    hot-corners {
+        off
+    }
+}
+
+output "HDMI-A-1" {
+    off
+}

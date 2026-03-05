@@ -1,0 +1,3 @@
+spawn-sh-at-startup "qs -c noctalia-shell"
+spawn-at-startup "lxqt-policykit-agent"
+spawn-at-startup "gnome-keyring-daemon --start --components=secrets"
