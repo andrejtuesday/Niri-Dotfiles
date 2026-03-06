@@ -605,13 +605,13 @@
                 "darkMode": true,
                 "generationMethod": "content",
                 "paletteColors": [
-                    "#aaaaaa",
-                    "#a7a7a7",
-                    "#cccccc",
-                    "#dddddd"
+                    "#c2c6d3",
+                    "#c6c6cb",
+                    "#d4c1cd",
+                    "#ffb4ab"
                 ],
                 "path": "/home/tuesday/Pictures/Wallpapers/jakub-cervenka-nova-skotia-jakub-cervenka-crop.jpg",
-                "useWallpaperColors": false
+                "useWallpaperColors": true
             },
             {
                 "colorScheme": "Monochrome",
@@ -644,9 +644,9 @@
                 "darkMode": true,
                 "generationMethod": "content",
                 "paletteColors": [
-                    "#dac3a3",
-                    "#d1c5b5",
-                    "#c4caab",
+                    "#ede2d2",
+                    "#cbc5bd",
+                    "#d3d6c7",
                     "#ffb4ab"
                 ],
                 "path": "/home/tuesday/Pictures/Wallpapers/wallhaven-eyqgko_2560x1440.png",
