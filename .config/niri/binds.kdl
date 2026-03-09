@@ -1,9 +1,8 @@
 binds {
-    Mod+TAB hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
-
-    Mod+Q { close-window; }
-    Mod+W {spawn "zen-browser"; }
-    Mod+E {spawn "thunar"; }
+    Mod+TAB { spawn "kitty"; }
+    Mod+Q   { close-window; }
+    Mod+W   {spawn "zen-browser"; }
+    Mod+E   {spawn "thunar"; }
 
     Mod+A { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
     Mod+V { spawn-sh "qs -c noctalia-shell ipc call launcher clipboard"; }
@@ -50,8 +49,8 @@ binds {
 
     Mod+U              { focus-workspace-down; }
     Mod+I              { focus-workspace-up; }
-    Mod+Shift+U         { move-column-to-workspace-down; }
-    Mod+Shift+I         { move-column-to-workspace-up; }
+    Mod+Shift+U        { move-column-to-workspace-down; }
+    Mod+Shift+I        { move-column-to-workspace-up; }
 
     Mod+Ctrl+U         { move-workspace-down; }
     Mod+Ctrl+I         { move-workspace-up; }
@@ -81,13 +80,14 @@ binds {
 
     Mod+Comma  { consume-or-expel-window-left; }
     Mod+Period { consume-or-expel-window-right; }
+    Mod+Bracketleft  { consume-window-into-column; }
+    Mod+Bracketright { expel-window-from-column; }
 
     Mod+R { switch-preset-column-width; }
     Mod+Shift+R { switch-preset-window-height; }
     Mod+Ctrl+R { reset-window-height; }
     Mod+F { maximize-column; }
     Mod+Ctrl+F { fullscreen-window; }
-
     Mod+Shift+F { expand-column-to-available-width; }
 
     Mod+C { center-column; }
@@ -95,7 +95,6 @@ binds {
 
     Mod+Minus { set-column-width "-10%"; }
     Mod+Equal { set-column-width "+10%"; }
-
     Mod+Shift+Minus { set-window-height "-10%"; }
     Mod+Shift+Equal { set-window-height "+10%"; }
 
@@ -103,12 +102,12 @@ binds {
     Mod+Shift+G { switch-focus-between-floating-and-tiling; }
     Mod+T { toggle-column-tabbed-display; }
 
-    Ctrl+Delete { screenshot; }
-    Ctrl+Shift+Delete { screenshot-screen; }
-    Alt+Delete { screenshot-window; }
+    Mod+Delete { screenshot; }
+    Mod+Shift+Delete { screenshot-screen; }
+    Mod+Ctrl+Delete { screenshot-window; }
 
     Mod+Shift+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
-    Mod+Shift+M { quit; }
+    Mod+M { quit; }
     Mod+Shift+P { power-off-monitors; }
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%+"; }

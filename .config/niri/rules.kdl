@@ -13,16 +13,20 @@ window-rule {
 }
 
 window-rule {
+    match app-id="pavucontrol"
+    match app-id="easyeffects"
+    match app-id="blueman"
+
+    open-floating true
+
+    default-column-width { proportion 0.45; }
+    default-window-height { proportion 0.45; }
+}
+
+window-rule {
     match app-id="Tk"
-    open-floating true
-}
-
-window-rule {
     match app-id="Matplotlib"
+
     open-floating true
 }
 
-window-rule {
-    match app-id=r#"zen$"# title=r#"Sign in|Log in|Save|Open|Extension:|Picture-in-Picture|Autofill|Password|Translate|Print"#
-    open-floating true
-}
