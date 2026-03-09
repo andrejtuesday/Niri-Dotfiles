@@ -21,3 +21,8 @@ window-rule {
     match app-id="Matplotlib"
     open-floating true
 }
+
+window-rule {
+    match app-id=r#"zen$"# title=r#"Sign in|Log in|Save|Open|Extension:|Picture-in-Picture|Autofill|Password|Translate|Print"#
+    open-floating true
+}

@@ -8,6 +8,7 @@ binds {
     Mod+A { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
     Mod+V { spawn-sh "qs -c noctalia-shell ipc call launcher clipboard"; }
     Mod+Escape { spawn-sh "qs -c noctalia-shell ipc call sessionMenu toggle"; }
+    Mod+Shift+B { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "bar" "toggle"; }
 
     Mod+O repeat=false { toggle-overview; }
 
@@ -99,6 +100,7 @@ binds {
     Mod+Shift+Equal { set-window-height "+10%"; }
 
     Mod+G       { toggle-window-floating; }
+    Mod+Shift+G { switch-focus-between-floating-and-tiling; }
     Mod+T { toggle-column-tabbed-display; }
 
     Ctrl+Delete { screenshot; }

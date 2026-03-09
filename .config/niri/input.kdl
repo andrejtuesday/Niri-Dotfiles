@@ -23,5 +23,5 @@ input {
         map-to-output "HDMI-A-2"
     }
 
-    focus-follows-mouse max-scroll-amount="90%"
+    focus-follows-mouse max-scroll-amount="40%"
 }
